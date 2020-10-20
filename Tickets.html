@@ -1,0 +1,142 @@
+<table width="100%">
+<tbody>
+<tr>
+<td align="center"><br />
+<table align="center" cellpadding="15" width="600" style="margin-left: auto; margin-right: auto; text-align: center; width: 600px;">
+<tbody>
+<tr>
+<td align="center">
+<img alt="GLPI: Logo" src="https://www.glpi.example.com/pics/logos/logo-GLPI-500-blue.png" height="68" width="112" />
+</td>
+</tr>
+<tr>
+<td valign="top"><br />
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+<!--1 ##IFticket.isdeleted=Sim## -->
+Um ticket que envolve você foi ##lang.ticket.isdeleted##.  O número do ticket é <strong>###ticket.id##</strong> com o assunto <strong>##ticket.title##</strong>##IFticket.category## sob a categoria <strong>##ticket.category##</strong>##ENDIFticket.category##.
+<!--2 ##ENDIFticket.isdeleted## -->
+<!--3 ##ELSEticket.isdeleted## -->
+<!--4 ##IFticket.action=Novo chamado## --> 
+Um novo ticket com o assunto <strong>##ticket.title##</strong> (###ticket.id##)##IFticket.category## sob a categoria <strong>##ticket.category##</strong>##ENDIFticket.category####IFticket.authors## foi solicitado com sucesso por <strong>##ticket.authors##</strong>##ENDIFticket.authors##.
+<!--5 ##ENDIFticket.action## -->
+<!--6 ##ELSEticket.action## -->
+<!--7 ##IFticket.storestatus=5## --> 
+Seu ticket foi considerado solucionado pelo agente ##ticket.assigntousers## ou pelo usuário.  O número do ticket é <strong>###ticket.id##</strong> com o assunto <strong>##ticket.title##</strong>##IFticket.category## sob a categoria <strong>##ticket.category##</strong>##ENDIFticket.category##.
+<!--8 ##ENDIFticket.storestatus## -->
+<!--9 ##ELSEticket.storestatus## -->
+Um ticket que envolve você foi atualizado.  O número do ticket é <strong>###ticket.id##</strong> com o assunto <strong>##ticket.title##</strong>##IFticket.category## sob a categoria <strong>##ticket.category##</strong>##ENDIFticket.category##.
+<!--10 ##ENDELSEticket.storestatus## -->
+<!--11 ##ENDELSEticket.action## -->
+<!--12 ##ENDELSEticket.isdeleted## -->
+</div>
+</td>
+</tr>
+<!--13 ##IFticket.isdeleted=Não## -->
+<!--14 ##IFticket.storestatus=5## -->
+<tr>
+<td valign="middle" style="background:#9FD6ED;">
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: left;"><strong>##lang.ticket.solvedate##</strong>: ##ticket.solvedate##.</span> <br /> ##ticket.solution.description##</blockquote>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border="0" cellpadding="5" cellspacing="5">
+  <tr>
+    <td height="33" valign="middle" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #cf142b; border:1px solid #cf142b;">
+      <a href="##ticket.urlapprove##" style="color: #cf142b; font-weight: bold; text-decoration: none;">Recusar a solução</a>
+    </td>
+    <td height="33" valign="middle" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #2C729E; border:1px solid #2C729E;">
+      <a href="##ticket.urlapprove##" style="color: #2C729E; font-weight: bold; text-decoration: none;">Aprovar a solução</a>
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+<!--15 ##ENDIFticket.storestatus## -->
+<!--16 ##ELSEticket.storestatus## -->
+<!--17 ##FOREACH LAST 1 followups## ##IFticket.action=Novo acompanhamento## -->
+<tr>
+<td valign="middle" style="background:#E0E0E0;">
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px;"><strong>##lang.followup.author##</strong>: ##followup.author##. <br /> <strong>##lang.followup.date##</strong>: ##followup.date##.</span> <br /> ##IFfollowup.isprivate=Não## ##followup.description## ##ENDIFfollowup.isprivate## ##ELSEfollowup.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEfollowup.isprivate##</blockquote>
+</td>
+</tr>
+<!--18 ##ENDIFticket.action## ##ENDFOREACHfollowups## -->
+<!--19 ##FOREACH LAST 1 followups## ##IFticket.action=Atualização de um acompanhamento## -->
+<tr>
+<td valign="middle" style="background:#E0E0E0;">
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px;"><strong>##lang.followup.author##</strong>: ##followup.author##. <br /> <strong>##lang.followup.date##</strong>: ##followup.date##.</span> <br /> ##IFfollowup.isprivate=Não## ##followup.description## ##ENDIFfollowup.isprivate## ##ELSEfollowup.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEfollowup.isprivate##</blockquote>
+</td>
+</tr>
+<!--20 ##ENDIFticket.action## ##ENDFOREACHfollowups## -->
+<!--21 ##FOREACH LAST 1 tasks## ##IFticket.action=Nova tarefa## -->
+<tr>
+<td valign="middle" style="background:#FEDA90;">
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> <br /> ##IFtask.isprivate=Não## <img src="https://www.glpi.example.com/imgs/##IFtask.status=Feito##check-##ENDIFtask.status##square-o.png" alt="##task.status##" width="16" height="16" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
+</td>
+</tr>
+<!--22 ##ENDIFticket.action## ##ENDFOREACHtasks## -->
+<!--23 ##FOREACH LAST 1 tasks## ##IFticket.action=Atualização de uma tarefa## -->
+<tr>
+<td valign="middle" style="background:#FEDA90;">
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> <br /> ##IFtask.isprivate=Não## <img src="https://www.glpi.example.com/imgs/##IFtask.status=Feito##check-##ENDIFtask.status##square-o.png" alt="##task.status##" width="16" height="16" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
+</td>
+</tr>
+<!--24 ##ENDIFticket.action## ##ENDFOREACHtasks## -->
+<!--25 ##ENDELSEticket.storestatus## -->
+
+<tr>
+<td valign="bottom">
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+<!--26 ##IFticket.action=Novo chamado## --> 
+Você deve receber uma resposta em breve sobre esse ticket.  Fique atento ao seu e-mail e acompanhe o ticket para o caso de precisarmos solicitar informações adicionais de você.
+<!--27 ##ENDIFticket.action## -->
+<!--28 ##ELSEticket.action## -->
+<!--29 ##IFticket.storestatus=5## -->
+<strong>##lang.ticket.autoclosewarning##</strong>.
+<!--30 ##ENDIFticket.storestatus## -->
+<!--31 ##ELSEticket.storestatus## -->
+O status atual deste ticket é <strong>##ticket.status##</strong><!-- (##ticket.storestatus##) -->.
+<!--32 ##ENDELSEticket.storestatus## -->
+<!--33 ##ENDELSEticket.action## -->
+</div>
+</td>
+</tr>
+
+<!--35 ##IFticket.storestatus=5## --> 
+<!--36 ##ENDIFticket.storestatus## -->
+<!--37 ##ELSEticket.storestatus## -->
+<tr>
+<td valign="bottom">
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+<!--44 ##IFticket.storestatus=6## -->
+Se você deseja reabrir este ticket de suporte, entre em contato com o agente de suporte.
+<!--45 ##ENDIFticket.storestatus## -->
+<!--46 ##ELSEticket.storestatus## -->
+Se você gostaria de responder a esta mensagem, por favor, responda a este e-mail ou responda clicando no seguinte link: <strong><a href="##ticket.url##">##ticket.url##</a></strong>
+<!--47 ##ENDELSEticket.storestatus## -->
+<!--48 ##ENDELSEticket.action## -->
+</div>
+</td>
+</tr>
+<!--50 ##ENDELSEticket.storestatus## -->
+<!--13-34 ##ENDIFticket.isdeleted## -->
+<!-- ##ELSEticket.isdeleted## -->
+<tr>
+<td valign="bottom">
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+Se você deseja reabrir este ticket de suporte, entre em contato com o agente de suporte.
+</div>
+</td>
+</tr>
+<!--40 ##ENDELSEticket.isdeleted## -->
+<tr>
+<td align="center" valign="bottom">
+<div style="color:#494949; font-family: Arial, Helvetica, sans-serif; font-size:11px;"><a href="https://www.glpi.example.com/" target="_blank" style="border: 0"><img src="https://www.glpi.example.com/EMPRESA-LOGOMARCA.png" alt="Logotipo da empresa" width="182" height="47"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>

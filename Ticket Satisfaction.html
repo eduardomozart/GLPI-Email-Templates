@@ -1,0 +1,73 @@
+<table width="100%">
+<tbody>
+<tr>
+<td align="center"><br />
+<table align="center" cellpadding="15" width="600" style="margin-left: auto; margin-right: auto; text-align: center; width: 600px;">
+<tbody>
+<tr>
+<td align="center">
+<img alt="GLPI: Logo" src="https://www.glpi.example.com/pics/logos/logo-GLPI-500-blue.png" height="68" width="112" />
+</td>
+</tr>
+<!-- <tr>
+<td valign="top">
+<h2 style="font-family: Arial, Helvetica, sans-serif; text-align: left;">##followup.author##,</h2>
+</td>
+</tr> -->
+<!-- ##IFticket.action=Pesquisa de satisfação## -->
+<tr>
+<td valign="top"><br />
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+Um ticket que envolve você foi ##ticket.status## <!--(##ticket.storestatus##)--> em ##ticket.closedate##.  O número do ticket é <strong>###ticket.id##</strong> com o assunto <strong>##ticket.title##</strong>##IFticket.category## sob a categoria <strong>##ticket.category##</strong>##ENDIFticket.category##.</div>
+</td>
+</tr> 
+<tr>
+<td valign="top">
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">Avalie o atendimento feito neste Ticket respondendo a <strong>Pesquisa de Satisfação</strong>. Sua participação é fundamental para a melhoria da qualidade dos serviços prestados e para nossa constante evolução.</div>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border="0" cellpadding="5" cellspacing="5">
+  <tr>
+    <td height="33" valign="middle" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #e05443; border:1px solid #e05443;">
+      <a href="##ticket.urlsatisfaction##" style="color: #e05443; font-weight: bold; text-decoration: none;">Pesquisa de satisfação</a>
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+<!-- ##IFticket.storestatus=6## -->
+<tr>
+<td valign="bottom">
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+Se você deseja reabrir este ticket de suporte, entre em contato com o agente de suporte.
+</div>
+</td>
+</tr>
+<!-- ##ENDIFticket.storestatus## -->
+<!-- ##ENDIFticket.action## -->
+<!-- ##ELSEticket.action## -->
+<tr>
+<td valign="top"><br />
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+Agradecemos por você compartilhar sua avaliação conosco. Seu feedback nos ajuda a melhorar o serviço para todos. Esperamos vê-lo(a) novamente em breve.
+</td>
+</tr>
+<tr>
+<td valign="middle" style="background:#FDD;">
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px;">##IFticket.authors##<strong>##lang.ticket.authors##</strong>: ##ticket.authors##. <br /> ##ENDIFticket.authors##<strong>##lang.satisfaction.dateanswered##</strong>: ##satisfaction.dateanswered##.</span> <br /><br /> <div class="rateit rateit-bg" id="stars"><div id="rateit-range-2" class="rateit-range" tabindex="0" role="slider" aria-label="rating" aria-owns="rateit-reset-2" aria-valuemin="0" aria-valuemax="5" aria-valuenow="4" aria-readonly="false" style="background: url(https://www.glpi.example.com/imgs/star.gif); width: 80px; height: 16px;"><div class="rateit-selected" style="background: url(https://www.glpi.example.com/imgs/star.gif) left -16px; height: 16px; width:##IFsatisfaction.satisfaction=1## 16px ##ENDIFsatisfaction.satisfaction## ##IFsatisfaction.satisfaction=2## 32px ##ENDIFsatisfaction.satisfaction## ##IFsatisfaction.satisfaction=3## 48px ##ENDIFsatisfaction.satisfaction## ##IFsatisfaction.satisfaction=4## 64px ##ENDIFsatisfaction.satisfaction## ##IFsatisfaction.satisfaction=5## 80px ##ENDIFsatisfaction.satisfaction##;"></div></div></div> <br /> <em>##satisfaction.description##</em></blockquote>
+</td>
+</tr>
+<!-- ##ENDELSEticket.action## -->
+<tr>
+<td align="center" valign="bottom"><br />
+<div style="color:#494949; font-family: Arial, Helvetica, sans-serif; font-size:11px;"><a href="https://www.glpi.example.com/" target="_blank" style="border: 0"><img src="https://www.glpi.example.com/EMPRESA-LOGOMARCA.png" alt="Logotipo da empresa" width="182" height="47" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
