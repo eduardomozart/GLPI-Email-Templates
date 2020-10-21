@@ -21,7 +21,7 @@ You'll need to translate all ``ticket.action`` and ``ticket.isprivate`` function
 
 ## Installation
 
-As cited on "Translation" section, it relies on translated strings to detect the notification type (new ticket, new followup, etc) and to detect if a task or followup has been marked as private, so you'll need to create a specific notification template for each language that you would like to support.
+As cited on "**Translation**" section, it relies on translated strings to detect the notification type (new ticket, new followup, etc) and to detect if a task or followup has been marked as private, so you'll need to create a specific notification template for each language that you would like to support.
 
 ### Tickets Template
 
