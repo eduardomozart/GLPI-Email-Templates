@@ -49,7 +49,7 @@ As cited on "**Translation**" section, it relies on translated strings to detect
 
 *Novo acompanhamento (New followup)/Atualização de um acompanhamento (Update of a followup).*
 
-![Novo acompanhamento (New followup)](/screenshots/task-new-or-update.png?raw=true "Nova tarefa (New task)/Atualização de uma tarefa (Update of a task)")
+![Novo acompanhamento (New followup)](/screenshots/new-or-update-task.png?raw=true "Nova tarefa (New task)/Atualização de uma tarefa (Update of a task)")
 
 *Nova tarefa (New task)/Atualização de uma tarefa (Update of a task).*
 
