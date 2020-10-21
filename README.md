@@ -11,6 +11,32 @@ This template was sucessfully tested on:
 1. Microsoft Outlook 2019/2010
 1. Mozilla Thunderbird 78.3.3
 
+## Screenshots
+
+![Novo acompanhamento (New ticket)](/screenshots/new-ticket.png?raw=true "Novo acompanhamento (New ticket)")
+
+*Novo chamado (New ticket).*
+ 
+![Novo acompanhamento (New followup)](/screenshots/new-followup.png?raw=true "Novo acompanhamento (New followup)/Atualização de um acompanhamento (Update of a ticket)")
+
+*Novo acompanhamento (New followup)/Atualização de um acompanhamento (Update of a followup).*
+
+![Novo acompanhamento (New followup)](/screenshots/new-or-update-task.png?raw=true "Nova tarefa (New task)/Atualização de uma tarefa (Update of a task)")
+
+*Nova tarefa (New task)/Atualização de uma tarefa (Update of a task).*
+
+![Chamado solucionado (Ticket solved)](/screenshots/solution.png?raw=true "Chamado solucionado (Ticket solved)")
+
+*Chamado solucionado (Ticket solved).*
+
+![Pesquisa de satisfação (Satisfaction survey)](/screenshots/ticket-satisfaction.png?raw=true "Pesquisa de satisfação (Satisfaction survey)")
+
+*Pesquisa de satisfação (Satisfaction survey).*
+
+![Resposta da pesquisa de satisfação (Satisfaction survey answer)](/screenshots/ticket-satisfaction-response.png?raw=true "Resposta da pesquisa de satisfação (Satisfaction survey answer)")
+
+*Resposta da pesquisa de satisfação (Satisfaction survey).*
+
 ## Translation
 
 These templates rely on ``ticket.action`` to adapt the message body (HTML) to correspond to the notification type (new ticket, new followup, etc), but this method rely on translated strings, e.g. to detect that the message refers to a "New ticket", the template detects it with ``##IFticket.action=Novo chamado##``. **Novo chamado** is the translation to "New ticket" in "Português do Brasil".
@@ -38,32 +64,6 @@ As cited on "**Translation**" section, it relies on translated strings to detect
 1. Select your language into **Language** dropdown, e.g. "Português do Brasil".
 1. Enter the **Subject** of the notification template (Default: ``##ticket.action## ##ticket.title##``)
 1. In **Email HTML body**, click on the option "Source code" and paste the HTML body of the ``Tickets Satisfaction.html`` template.
-
-## Screenshots
-
-![Novo acompanhamento (New ticket)](/screenshots/new-ticket.png?raw=true "Novo acompanhamento (New ticket)")
-
-*Novo chamado (New ticket).*
- 
-![Novo acompanhamento (New followup)](/screenshots/new-followup.png?raw=true "Novo acompanhamento (New followup)/Atualização de um acompanhamento (Update of a ticket)")
-
-*Novo acompanhamento (New followup)/Atualização de um acompanhamento (Update of a followup).*
-
-![Novo acompanhamento (New followup)](/screenshots/new-or-update-task.png?raw=true "Nova tarefa (New task)/Atualização de uma tarefa (Update of a task)")
-
-*Nova tarefa (New task)/Atualização de uma tarefa (Update of a task).*
-
-![Chamado solucionado (Ticket solved)](/screenshots/solution.png?raw=true "Chamado solucionado (Ticket solved)")
-
-*Chamado solucionado (Ticket solved).*
-
-![Pesquisa de satisfação (Satisfaction survey)](/screenshots/ticket-satisfaction.png?raw=true "Pesquisa de satisfação (Satisfaction survey)")
-
-*Pesquisa de satisfação (Satisfaction survey).*
-
-![Resposta da pesquisa de satisfação (Satisfaction survey answer)](/screenshots/ticket-satisfaction-response.png?raw=true "Resposta da pesquisa de satisfação (Satisfaction survey answer)")
-
-*Resposta da pesquisa de satisfação (Satisfaction survey).*
 
 ## License
 
