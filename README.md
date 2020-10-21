@@ -55,6 +55,7 @@ As cited on "**Translation**" section, it relies on translated strings to detect
 1. Click on **Template translations** > **Add a New Translation**.
 1. Select your language into **Language** dropdown, e.g. "Português do Brasil".
 1. Enter the **Subject** of the notification template (Default: ``##ticket.action## ##ticket.title##``)
+1. In **Email text body**, paste the content of the ``Tickets.txt`` template.
 1. In **Email HTML body**, click on the option "Source code" and paste the HTML body of the ``Tickets.html`` template.
 
 ### Ticket Satisfaction Template
