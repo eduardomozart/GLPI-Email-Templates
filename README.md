@@ -1,5 +1,7 @@
 # GLPI-Email-Templates
 
+For emails, rely on tables!
+
 The default GLPI template for notifications aren't exactly friendly, so I decided to search into Internet to see if I could find a ready-to-use template that I could deploy into my GLPI instance to notify users when a new ticket is opened, when a ticket is added by a technician or by the user or when the ticket is closed, sending the solution used to resolve the ticket and the satisfaction survey.
 
 I could find some templates (available at "**Useful links**" sections at the bottom), but I would like a minimalist approach instead of showing all followups and tasks into a single mail. I found [hmarthe/TCAT-M-osTicket-Email-Templates](https://github.com/hmarthe/TCAT-M-osTicket-Email-Templates) and really liked it, so I decided to adapt this template from osTicket to GLPI.
@@ -10,8 +12,6 @@ This template was sucessfully tested on:
 1. Mozilla Thunderbird 78.3.3
 
 ## Screenshots
-
-For emails, rely on tables!
 
 ![Novo acompanhamento (New ticket)](/screenshots/new-ticket.png?raw=true "Novo acompanhamento (New ticket)")
 
