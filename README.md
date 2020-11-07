@@ -78,4 +78,5 @@ As cited on "**Translation**" section, it relies on translated strings to detect
 1. [Adicionando template de notificações via email personalizados no GLPI (Abertura, Acompanhamento e Encerramento de chamados)](http://nattanielafonso.com.br/adicionando-template-de-notificacoes-via-email-personalizados-no-glpi-abertura-acompanhamento-e-encerramento-de-chamados/). Nattaniel Afonso.
 1. [Notificações no GLPI em HTML e CSS que funciona no Gmail](http://www.thiagopassamani.com.br/tags/glpi-notification-template-mail). Thiago Passamani.
 1. [Scripts for Email Template](https://community.spiceworks.com/scripts?category=15). Spiceworks.
+1. [Free HTML Email Templates for SaaS and Startups](https://www.htmlemailtemplates.net/free-stuff/free-html-email-templates/). HTML Email Templates for SaaS and Startups.
 1. [Email template](https://www.helpdesk.com/help/email-template/). HelpDesk Help Center.
