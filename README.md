@@ -80,3 +80,5 @@ As cited on "**Translation**" section, it relies on translated strings to detect
 1. [Scripts for Email Template](https://community.spiceworks.com/scripts?category=15). Spiceworks.
 1. [Free HTML Email Templates for SaaS and Startups](https://www.htmlemailtemplates.net/free-stuff/free-html-email-templates/). HTML Email Templates for SaaS and Startups.
 1. [Email template](https://www.helpdesk.com/help/email-template/). HelpDesk Help Center.
+1. [Free Responsive Simple HTML Email Template](https://github.com/leemunroe/responsive-html-email-template). GitHub.
+1. [Email Template Examples](https://github.com/zendesklabs/email_template_examples). ZendeskLabs (GitHub).
