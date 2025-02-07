@@ -51,7 +51,7 @@ As cited on "**Translation**" section, it relies on translated strings to detect
 
 ### Tickets Template
 
-1. In **Setup** > **Notifications** > **Notification Templates**, click on **Tickets**.
+1. In **Setup** > **Notifications** > **Notification Templates**, click on **Tickets** in the list.
 1. Click on **Template translations** > **Add a New Translation**.
 1. Select your language into **Language** dropdown, e.g. "Português do Brasil".
 1. Enter the **Subject** of the notification template (Default: ``##ticket.action## ##ticket.title##``)
@@ -60,7 +60,7 @@ As cited on "**Translation**" section, it relies on translated strings to detect
 
 ### Ticket Satisfaction Template
 
-1. In **Setup** > **Notifications** > **Notification Templates**, click on **Tickets Satisfaction**.
+1. In **Setup** > **Notifications** > **Notification Templates**, click on **Tickets Satisfaction** in the list.
 1. Click on **Template translations** > **Add a New Translation**.
 1. Select your language into **Language** dropdown, e.g. "Português do Brasil".
 1. Enter the **Subject** of the notification template (Default: ``##ticket.action## ##ticket.title##``)
