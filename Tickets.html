@@ -6,7 +6,7 @@
 <tbody>
 <tr>
 <td align="center">
-<img alt="GLPI: Logo" src="https://www.glpi.example.com/pics/logos/logo-GLPI-500-blue.png" height="68" width="112" />
+<img alt="GLPI: Logo" src="https://www.glpi.example.com/pics/logos/sources/GLPI_Logo-color.svg" height="68" width="112" />
 </td>
 </tr>
 <tr>
@@ -71,14 +71,14 @@ Um ticket que envolve você foi atualizado.  O número do ticket é <strong>###t
 <!--21 ##FOREACH LAST 1 tasks## ##IFticket.action=Nova tarefa## -->
 <tr>
 <td valign="middle" style="background:#FEDA90;">
-<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> <br /> ##IFtask.isprivate=Não## <img src="https://www.glpi.example.com/imgs/##IFtask.status=Feito##check-##ENDIFtask.status##square-o.png" alt="##task.status##" width="16" height="16" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> <br /> ##IFtask.isprivate=Não## <img src="https://www.glpi.example.com/##IFtask.status=Feito##pics/timeline/done.png##ENDIFtask.status####ELSEtask.status##pics/timeline/todo.png##ENDELSEtask.status##" alt="##task.status##" width="16" height="16" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
 </td>
 </tr>
 <!--22 ##ENDIFticket.action## ##ENDFOREACHtasks## -->
 <!--23 ##FOREACH LAST 1 tasks## ##IFticket.action=Atualização de uma tarefa## -->
 <tr>
 <td valign="middle" style="background:#FEDA90;">
-<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> <br /> ##IFtask.isprivate=Não## <img src="https://www.glpi.example.com/imgs/##IFtask.status=Feito##check-##ENDIFtask.status##square-o.png" alt="##task.status##" width="16" height="16" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px; text-align: left;"><strong>##lang.task.author##</strong>: ##task.author##. <br /> <strong>##lang.task.date##</strong>: ##task.date##. <br /> <strong>##lang.task.status##</strong>: ##task.status##.</span> <br /> ##IFtask.isprivate=Não## <img src="https://www.glpi.example.com/##IFtask.status=Feito##pics/timeline/done.png##ENDIFtask.status####ELSEtask.status##pics/timeline/todo.png##ENDELSEtask.status##" alt="##task.status##" width="16" height="16" /> ##task.description## ##ENDIFtask.isprivate## ##ELSEtask.isprivate## <br /> <em>Esta mensagem é privada, confidencial e dirigida exclusivamente ao seu destinatário.</em> ##ENDELSEtask.isprivate##</blockquote>
 </td>
 </tr>
 <!--24 ##ENDIFticket.action## ##ENDFOREACHtasks## -->
@@ -130,7 +130,7 @@ Se você deseja reabrir este ticket de suporte, entre em contato com o agente de
 <!--40 ##ENDELSEticket.isdeleted## -->
 <tr>
 <td align="center" valign="bottom">
-<div style="color:#494949; font-family: Arial, Helvetica, sans-serif; font-size:11px;"><a href="https://www.glpi.example.com/" target="_blank" style="border: 0"><img src="https://www.glpi.example.com/EMPRESA-LOGOMARCA.png" alt="Logotipo da empresa" width="182" height="47"></a></div>
+<div style="color:#494949; font-family: Arial, Helvetica, sans-serif; font-size:11px;"><a href="https://www.glpi.example.com/" target="_blank" style="border: 0"><img src="https://www.glpi.example.com/pics/logos/logo-GLPI-250-black.png" alt="Logotipo da empresa" width="200" height="auto"></a></div>
 </td>
 </tr>
 </tbody>
