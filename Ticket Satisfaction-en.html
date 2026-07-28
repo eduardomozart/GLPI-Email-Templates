@@ -1,0 +1,73 @@
+<table width="100%">
+<tbody>
+<tr>
+<td align="center"><br />
+<table align="center" cellpadding="15" width="600" style="margin-left: auto; margin-right: auto; text-align: center; width: 600px;">
+<tbody>
+<tr>
+<td align="center">
+<img alt="GLPI: Logo" src="https://www.glpi.example.com/pics/logos/logo-GLPI-500-blue.png" height="68" width="112" />
+</td>
+</tr>
+<!-- <tr>
+<td valign="top">
+<h2 style="font-family: Arial, Helvetica, sans-serif; text-align: left;">##followup.author##,</h2>
+</td>
+</tr> -->
+<!-- ##IFticket.action=Satisfaction survey## -->
+<tr>
+<td valign="top"><br />
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+A ticket involving you has been ##ticket.status## <!--(##ticket.storestatus##)--> on ##ticket.closedate##. The ticket number is <strong>###ticket.id##</strong> with the subject <strong>##ticket.title##</strong>##IFticket.category## under the category <strong>##ticket.category##</strong>##ENDIFticket.category##.</div>
+</td>
+</tr> 
+<tr>
+<td valign="top">
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">Please evaluate the service provided on this Ticket by responding to the <strong>Satisfaction Survey</strong>. Your participation is fundamental to improving the quality of the services provided and to our continuous evolution.</div>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table border="0" cellpadding="5" cellspacing="5">
+  <tr>
+    <td height="33" valign="middle" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #e05443; border:1px solid #e05443;">
+      <a href="##ticket.urlsatisfaction##" style="color: #e05443; font-weight: bold; text-decoration: none;">Satisfaction Survey</a>
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+<!-- ##IFticket.storestatus=6## -->
+<tr>
+<td valign="bottom">
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+If you wish to reopen this support ticket, please contact the support agent.
+</div>
+</td>
+</tr>
+<!-- ##ENDIFticket.storestatus## -->
+<!-- ##ENDIFticket.action## -->
+<!-- ##ELSEticket.action## -->
+<tr>
+<td valign="top"><br />
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:14px; text-align: left;">
+Thank you for sharing your evaluation with us. The ticket number is <strong>###ticket.id##</strong> with the subject <strong>##ticket.title##</strong>##IFticket.category## under the category <strong>##ticket.category##</strong>##ENDIFticket.category##. Your feedback helps us improve the service for everyone. We hope to see you again soon.
+</td>
+</tr>
+<tr>
+<td valign="middle" style="background:#FDD;">
+<blockquote style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;"><span style="font-family: Arial, Helvetica, sans-serif; font-size:12px;">##IFticket.authors##<strong>##lang.ticket.authors##</strong>: ##ticket.authors##. <br /> ##ENDIFticket.authors##<strong>##lang.satisfaction.dateanswered##</strong>: ##satisfaction.dateanswered##.</span> <br /><br /> ##IFsatisfaction.satisfaction=1##<img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" />##ENDIFsatisfaction.satisfaction####IFsatisfaction.satisfaction=2##<img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" />##ENDIFsatisfaction.satisfaction####IFsatisfaction.satisfaction=3##<img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" />##ENDIFsatisfaction.satisfaction####IFsatisfaction.satisfaction=4##<img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" />##ENDIFsatisfaction.satisfaction####IFsatisfaction.satisfaction=5##<img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" /><img src="https://www.glpi.example.com/imgs/star.gif" alt="##task.status##" width="16" height="16" />##ENDIFsatisfaction.satisfaction## <br /> <em>##satisfaction.description##</em></blockquote>
+</td>
+</tr>
+<!-- ##ENDELSEticket.action## -->
+<tr>
+<td align="center" valign="bottom"><br />
+<div style="color:#494949; font-family: Arial, Helvetica, sans-serif; font-size:11px;"><a href="https://www.glpi.example.com/" target="_blank" style="border: 0"><img src="https://www.glpi.example.com/EMPRESA-LOGOMARCA.png" alt="Company logo" width="182" height="47" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>

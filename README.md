@@ -45,6 +45,8 @@ Another function that depends on translated strings is ``ticket.isprivate``, e.g
 
 You'll need to translate all ``ticket.action`` and ``ticket.isprivate`` function calls into the template files according to your language before deploying them into your GLPI instance if you're not using the language "Português do Brasil" by default in your environment.
 
+The English event names can be retrieved from `src/NotificationTarget*.php` files (`getEvents()` PHP func) from the GLPI source code. For example, the event `New ticket` is defined at `src/NotificationTargetTicket.php`. When translating to `pt-BR`, you can search in GLPI Transifex for this string (`New ticket` -> `Novo chamado`) and set up the template accordingly.
+
 ## Installation
 
 As cited in "**Translation**" section, it relies on translated strings to detect the notification type (new ticket, new follow-up, etc) and to detect if a task or follow-up has been marked as private, so you'll need to create a specific notification template for each language that you would like to support.
@@ -68,6 +70,8 @@ As cited in "**Translation**" section, it relies on translated strings to detect
 1. Enter the **Subject** of the notification template (Default: ``##ticket.action## ##ticket.title##``)
 1. In **Email text body**, paste the content of the ``Ticket Satisfaction.txt`` template.
 1. In **Email HTML body**, click on the option "Source code" and paste the HTML body of the ``Tickets Satisfaction.html`` template.
+
+See also: [https://help.glpi-project.org/tutorials/helpdesk/satisfaction](https://help.glpi-project.org/tutorials/helpdesk/satisfaction)
 
 ## License
 
